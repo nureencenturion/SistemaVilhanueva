@@ -4,6 +4,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author u71744222177
@@ -127,6 +129,11 @@ public class JDlgMpvUsuarios extends javax.swing.JDialog {
 
         jBtnExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
         jBtnExcluir.setText("Excluir");
+        jBtnExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnExcluirActionPerformed(evt);
+            }
+        });
 
         jBtnConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gravar.png"))); // NOI18N
         jBtnConfirmar.setText("Confirmar");
@@ -138,6 +145,11 @@ public class JDlgMpvUsuarios extends javax.swing.JDialog {
 
         jBtnPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
         jBtnPesquisar.setText("Pesquisar");
+        jBtnPesquisar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnPesquisarActionPerformed(evt);
+            }
+        });
 
         jBtnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
         jBtnCancelar.setText("Cancelar");
@@ -271,6 +283,17 @@ public class JDlgMpvUsuarios extends javax.swing.JDialog {
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
     desabilitar();        // TODO add your handling code here:
     }//GEN-LAST:event_jBtnConfirmarActionPerformed
+
+    private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showConfirmDialog(null, "Confirma exclusão do usuário ?",
+                "Seleciona a opção", JOptionPane.YES_NO_OPTION );
+    }//GEN-LAST:event_jBtnExcluirActionPerformed
+
+    private void jBtnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showInputDialog(null, "Entre com o código do usuário");
+    }//GEN-LAST:event_jBtnPesquisarActionPerformed
 
     /**
      * @param args the command line arguments

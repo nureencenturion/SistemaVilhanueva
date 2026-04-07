@@ -111,6 +111,7 @@ public class JFrmPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         JDlgMpvUsuarios jDlgMpvUsuarios = new JDlgMpvUsuarios(null, true);
         jDlgMpvUsuarios.setVisible(true);
+        setLocationRelativeTo(null);
         
     }//GEN-LAST:event_jMnuUsuariosActionPerformed
 
