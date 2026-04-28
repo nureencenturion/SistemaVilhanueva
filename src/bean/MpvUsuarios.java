@@ -11,7 +11,7 @@ import java.util.Date;
  * @author u71744222177
  */
 public class MpvUsuarios {
-    private int MpvIdUsuarios;
+    private int MpvIdUsuarios;  
     private String mpvNome;
     private String mpvApelido;
     private String mpvCpf;
@@ -131,6 +131,8 @@ public class MpvUsuarios {
     public void setMpvAtivo(String mpvAtivo) {
         this.mpvAtivo = mpvAtivo;
     }
+    
+    
     
     
     
